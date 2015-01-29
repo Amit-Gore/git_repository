@@ -1,0 +1,311 @@
+
+<div ng-controller="doctor_search"  >
+		  <!-- <p>{{cards}} is the search result</p> -->
+		  </div>
+
+<!-- 
+<div ng-controller="doctor_search"  >
+		  <p>{{cards}} is the search result</p>
+		  </div>
+ -->
+<!-- Page Content -->
+
+<div class="container">
+	
+    <div class="row visible-on">
+		<br>
+			<ol class="breadcrumb pull-left">
+                <li><a href="#">Home</a></li>
+                <li class="active">Search</li>
+            </ol>
+			
+			<div class="col-lg-6" ng-controller="doctor_search">
+			<center><h3>Showing  {{cards.length}}  results for "{{keywords}}" </h3></center>
+			</div>
+			<div class="col-lg-3 pull-right">
+			
+			<div class="input-group">
+			  <input type="search" class="form-control" placeholder="Search " aria-describedby="basic-addon2" ng-model="searchText">
+			  <span class="input-group-addon" id="basic-addon2"><i class="fa fa-send"></i></span>
+			</div>
+			
+			
+			<!-- <input class="form-control" placeholder="Search"/> -->
+			
+			</div>
+			
+        <br>
+            
+    </div>
+    <!-- /.row -->
+
+    <!-- Search Context -->
+
+    <div class="row" id="contentHolder">
+	
+		<div class="col-md-2" >
+			<div class="[ panel1 panel1-default ] panel1-google-plus" style="padding:2px;margin-bottom:15px" > 
+				<div style="margin-bottom:15px;">	
+					<div class="heading_filter">
+						<h5><b style="color:#f8f8f8;font-weight:600;">Filter 1</b></h5>
+					</div>
+					
+					<tr>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'name'; reverse=false">&nbsp;&nbsp;Name</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'fees'; reverse=false">&nbsp;&nbsp;Fees</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'location'; reverse=!reverse">&nbsp;&nbsp;Area</input></th>
+					</tr>
+				</div>
+				<div style="margin-bottom:15px;">	
+					<div class="heading_filter">
+						<h5><b style="color:#f8f8f8;font-weight:600;">Filter 1</b></h5>
+					</div>
+					
+					<tr>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'name'; reverse=false">&nbsp;&nbsp;Name</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'fees'; reverse=false">&nbsp;&nbsp;Fees</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'location'; reverse=!reverse">&nbsp;&nbsp;Area</input></th>
+					</tr>
+				</div>
+				
+				<div style="margin-bottom:15px;">	
+					<div class="heading_filter">
+						<h5><b style="color:#f8f8f8;font-weight:600;">Filter 1</b></h5>
+					</div>
+					
+					<tr>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'name'; reverse=false">&nbsp;&nbsp;Name</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'fees'; reverse=false">&nbsp;&nbsp;Fees</input></th><br>
+					  <th>&nbsp;&nbsp;<input type="checkbox" ng-click="predicate = 'location'; reverse=!reverse">&nbsp;&nbsp;Area</input></th>
+					</tr>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="col-md-7" style="bottom-margin:30px" ng-app="animateApp" ng-controller="mainController ">
+		 	
+		  <!-- Starting doctor_search controller defined by Amit -->
+		  <div ng-controller="doctor_search">
+		  
+		  
+			<div class="card animate-repeat" dir-paginate="card in cards |orderBy: predicate:reverse | filter:searchText | itemsPerPage : 5" >
+                <div class="[ panel1 panel1-default ] panel1-google-plus" >
+						<div class="dropdown">
+							<span class="dropdown-toggle" type="button" style="cursor:pointer" title="Options" data-toggle="dropdown">
+								<span class="fa fa-share-alt fa-3x"></span>
+							</span>
+							<ul class="dropdown-menu" role="menu">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-facebook-official" style="color:#3B5998"></i> facebook	</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-google-plus-square" style="color:#D34836"></i> google +</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-twitter-square" style="color:#9AE4E8"></i> twitter</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-whatsapp" style="color:#34af23"></i> whatsapp</a></li>
+							</ul>
+						</div>
+						<div class="panel1-google-plus-tags" style="z-index: 1;" >
+							<ul>
+								<!--  <li ng-repeat="location in card.locations"><span style="color:crimson"><i class="fa fa-map-marker"></i></span> {{location}}</li>-->
+							    <li><span style="color:crimson"><i class="fa fa-map-marker"></i></span> {{card.area}}</li>
+							</ul>
+						</div>
+					<div class="panel1-heading">
+						<div class="row" >
+							<div class="col-md-3 col-sm-3 col-lg-3" style="margin-bottom:2px" ><center>
+							    <div ng-if="card.DocImage===null">
+							     <svg  height='100' width='100'>
+									<g>
+									  <circle cx='50' cy='50' r='40' stroke='black' stroke-width='0' fill='SteelBlue' /></circle>
+									  <text x='50' y='60' style='text-anchor: middle' font-family='Palatino Linotype' font-weight='900' font-size='34' fill='white' >{{card.FirstName | limitTo: 1}}</text>
+									</g>
+								</svg>
+							    </div>
+							    
+							    <div ng-if="card.DocImage!==null">
+							    <img style="width:70px; height:70px" class="img-circle" ng-src="images/{{card.DocImage}}" alt="Mouse0270" />
+								</div>
+								
+								<p style="color:rgb(87,89,91);font-weight:600;font-size:15px">Dr. {{card.FirstName}} {{card.LastName}} <br> <span style="color:rgb(67,185,123);font-size:10px"> {{card.speciality | uppercase }}  </span></p>
+								
+								<!-- still not working  -->
+								
+								<div ng-show="card.image_service.length">
+									<span ng-repeat="service in card.image_service">
+										<img ng-src="{{service}}"/>  
+									</span> 
+								</div>
+								
+								
+								<!-- <img src="images/medical_icon.png" alt="Mouse0270" title="Medicine Facility" />
+								<img src="images/pathology_icon.png" alt="Mouse0270" title="Pathology" />
+								<img src="images/pathology_icon.png" alt="Mouse0270" title="vaccination Facility" />  --> </center>
+							</div>
+								
+							<div class="col-md-9 col-sm-9 col-lg-9"style="text-align:left;padding-top:10px;">
+									
+								 <br>
+								 <br>
+									<div class="col-md-12 col-sm-12 col-lg-12" style="margin-bottom:10px;">	
+										<center><img src="images/7.png" alt="Mouse0270" title="About" />
+										<p style="color:rgb(87,89,91);"><i> {{card.about}}</i></p>		
+										</center>
+									</div> 
+									<div class="row">
+									<div class="col-md-5 col-sm-5 col-lg-5">	
+										
+										<p style="text-align:justify"><i class="fa fa-h-square fa-x"></i> {{card.hospital}}</p>		
+										
+									</div>
+									<div class="col-md-7 col-sm-7 col-lg-7">	
+										<p style="text-align:left">Fees : <i class="fa fa-inr"></i> {{card.fee | currency :"":2 }}	
+										
+										
+										<button href="#primary_info" type="button" class="btn btn-primary btn-xs pull-right"
+										 ng-class="{ active: dropdown }" ng-click="(dropdown = !dropdown) ">
+										
+										<span style="color:white" class="fa fa-send">
+										</span> Book Appointment 
+										
+										</button>
+										
+										
+										</p>	
+									</div> 
+									</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- drop down -->
+					<div class="[ panel1 panel1-default ] panel1-google-plus"  ng-show="dropdown" >
+						<!-- <h5> {{card.name}}<h5>
+						<h5 class="text-right">{{card.fees | currency :"":2}}</h5>
+						<a href="#/primary_info" type="button" class="btn btn-primary btn-xs"  ><span style="color:white" class="fa fa-send"></span> Book Appointment </a></p> -->
+						 <div style="height:320px;width:100%;padding:1px;padding-top:-1px;"> 
+							<div>
+							
+							</div>
+							<div class="table-container"  > <!-- Adding other controller here:Amit -->
+								<div class="sliding-window" >
+								<table class="table table-responsive table-hover">
+									<thead>
+										<img class="img-responsive" src="images/Timestrip.png" />
+									</thead>
+									<tbody >
+									
+										<tr ng-repeat="slot in card.doc_calandar">
+										
+										<!--  <center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> {{slot.formatted_date}}  </span> </center>-->
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> {{slot.day}}  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> {{slot.date}} </span> <br><span style="font-size:15px;"> {{slot.month}} </span> </center></td>
+										
+										<td>
+										
+										<a ng-if="slot.0=='0'"  class="not_available">9:00 - 10:00  Am </a>
+										<a ng-if="slot.0=='1'"  ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}" class="available">9:00 - 10:00 Am  </a>
+										<br>
+										<a ng-if="slot.1=='0'"  class="not_available">10:00 - 11:00 Am </a>
+										<a ng-if="slot.1=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">10:00 - 11:00 Am</a>
+										<br>
+										<a ng-if="slot.2=='0'" href="#" class="not_available">11:00 - 12:00 noon </a>
+										<a ng-if="slot.2=='1'"  ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}" class="available">11:00 - 12:00 noon  </a>
+										
+										
+										</td>
+										<td >
+										
+										<a ng-if="slot.3=='0'"  class="not_available">12:00 - 1:00 Pm </a>
+										<a ng-if="slot.3=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">12:00 - 1:00 Pm </a>
+										<br>
+										<a ng-if="slot.4=='0'"  class="not_available">1:00 - 2:00 Pm </a>
+										<a ng-if="slot.4=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">1:00 - 2:00 Pm </a>
+										<br>
+										<a ng-if="slot.5=='0'"  class="not_available">2:00 - 3:00 Pm </a>
+										<a ng-if="slot.5=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available"> 2:00 - 3:00 Pm  </a>
+										<br>
+										<a ng-if="slot.6=='0'"  class="not_available">3:00 - 4:00 Pm  </a>
+										<a ng-if="slot.6=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">3:00 - 4:00 Pm </a>
+										
+										</td>
+										<td >
+										
+										<a ng-if="slot.7=='0'"  class="not_available">4:00 - 5:00 Pm </a>
+										<a ng-if="slot.7=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">4:00 - 5:00 Pm </a>
+										<br>
+										<a ng-if="slot.8=='0'"  class="not_available">5:00 - 6:00 Pm </a>
+										<a ng-if="slot.8=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">5:00 - 6:00 Pm </a>
+										<br>
+										<a ng-if="slot.9=='0'" class="not_available">6:00 - 7:00 Pm</a>
+										<a ng-if="slot.9=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">6:00 - 7:00 Pm </a>
+										
+										</td>
+										<td >
+										
+										<a ng-if="slot.10=='0'" class="not_available">7:00 - 8:00 Pm</a>
+										<a ng-if="slot.10=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">7:00 - 8:00 Pm </a>
+										<br>
+										<a ng-if="slot.11=='0'"  class="not_available">8:00 - 9:00 Pm</a>
+										<a ng-if="slot.11=='1'" ng-href="#/book_appointment/:0/:{{slot.standard_date}}/{{card.doc_id}}"  class="available">8:00 - 9:00 Pm</a>
+										
+										</td>
+										
+										
+										
+										
+										
+										<td> 
+										
+										</tr>
+									</tbody>
+								
+								</table>
+								
+									
+								</div> 
+							</div> 
+						</div> 
+						<div> 		
+								<!--  	<div style="padding:2px;text-align:center;margin:5px;" id="demo-nav">
+										<dir-pagination-controls template-url="webpage/dirPagination1.html"></dir-pagination-controls>
+									</div>-->	
+						</div>	 
+						
+						
+					</div>
+            </div>
+			<br>
+			<center> <dir-pagination-controls template-url="webpage/dirPagination.html"></dir-pagination-controls> </center>
+          </div><!-- Controller 'doctor_search' ends -->
+        	
+        </div>
+			
+			<!-- map -->
+			
+		<div class="col-md-3">
+			<div class="card1" class="map" >
+				<!--  <iframe class="map" width="100%" height="607px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+						src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=18.5203,73.8567&amp;spn=56.506174,79.013672&amp;t=m&amp;z=11&amp;output=embed"></iframe>
+			  -->
+			 <!-- <myMap id="map-canvas" style="width:200px;height:300px;padding:10px;"></myMap> -->
+			<div ng-controller="MapCtrl">
+				<div id="map"></div>
+				<div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+					 <!-- <a  ng-click="openInfoWindow($event, marker)">{{marker.title}}</a> -->
+				</div>
+			</div>
+			 
+			 
+			 </div> 
+		</div>
+        
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+
+
+
+

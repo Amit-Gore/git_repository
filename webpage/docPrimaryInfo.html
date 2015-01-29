@@ -1,0 +1,247 @@
+<div class="container" >
+	<div class="row" id="contentHolder" style="margin-top:50px;" >
+				<!-- left profile  -->
+				<div class="col-md-8">
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row">
+							<div class="col-md-2 pro-pic"><center>
+							<!-- profile image -->
+							<img ng-src="{{card.img}}" title=""/></center>
+							</div>
+							<div class="col-md-6 pro-info">
+							<div itemscope itemtype="http://schema.org/Person">
+							<div itemprop="name"><h4 >{{doc_data.0.FirstName}} {{doc_data.0.LastName}}</h4></div>
+							</div>
+
+							
+							<h5 class="pro-deg">{{card.degree | uppercase}}</h5>
+							<p class="green">{{card.about}}</p>
+							</div>
+							<div class="col-md-4">
+								<div style="margin:10px;padding-top:5px;">
+								<center>
+								<h5> Change Time & Date</h5>
+								<input type="image" ng-src="images/Calendar.png" title="" ng-click="dropdown = !dropdown" ng-class="{ active: dropdown }"/>
+								</center>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- dorp down -->
+					<div class="[ panel1 panel1-default ] panel1-google-plus"  ng-show="dropdown" >
+						<!-- <h5> {{card.name}}<h5>
+						<h5 class="text-right">{{card.fees | currency :"":2}}</h5>
+						<a href="#/primary_info" type="button" class="btn btn-primary btn-xs"  ><span style="color:white" class="fa fa-send"></span> Book Appointment </a></p> -->
+						 <div style="height:300px;width:100%;padding:1px;padding-top:-1px;overflow-y:auto;"> 
+							<div>
+							
+							</div>
+							<div class="table-container" >
+								<div class="sliding-window" >
+								<table class="table table-responsive table-hover">
+									<thead>
+										<img class="img-responsive" src="images/Timestrip1.png" />
+									</thead>
+									<tbody >
+										<tr dir-paginate=" |itemsPerPage : 2">
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 21 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+										<tr>
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 21 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+										<tr>
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 21 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+										<tr>
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 22 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+										<tr>
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 23 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+										<tr>
+										<td><center><span style="font-size:12px;border-radius:10px;padding:7px;margin:2px"> Wed  </span> <br> <span style="font-weight:900;font-size:20px;padding-left:4px"> 24 </span> <br><span style="font-size:15px;"> Jan </span> </center></td> <td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#">8.00</a> <a href="#"> 8.00</a> </td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td><td><a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a> <a href="#"> 8.00</a></td>
+										</tr>
+									</tbody>
+								
+								</table>	
+								</div> 
+							</div> 
+						</div> 
+						<div> 		
+									<div style="padding:2px;text-align:center;margin:5px;" id="demo-nav">
+										<dir-pagination-controls template-url="webpage/dirPagination1.html"></dir-pagination-controls>
+									</div>	
+						</div>	 
+						
+						
+					</div>
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row doc_ser">
+							<div class="col-md-4">
+							<!-- Hospital details -->
+							<h4><img ng-src="images/doctorproicons/hospital.png" /> Hospitals </h4>
+							<div class="col-md-12" ng-repeat="location in card.locations"><span style="color:#43b98f"><i class="fa fa-map-marker"></i></span> {{location}}</div>
+							
+							</div>
+							<div class="col-md-4">
+							<h4><img ng-src="images/doctorproicons/timings.png" /> Timings </h4>		
+							<p></p>
+							</div>
+							<div class="col-md-4">
+							<h4><img ng-src="images/doctorproicons/fees.png" /> Fees Details</h4>
+							<h3 style="margin-left:25px;">{{doc_data.0.fee | currency: "": 2 }} / -</h3>							
+							</div>
+						</div>
+					</div>
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row doc_ser">
+							<!-- Services details -->
+							<h4><img ng-src="images/doctorproicons/services.png" />  Services Available </h4>
+						</div>
+						<div class="row doc_ser">
+							<div class="row" ng-show="card.image_service.length">
+								<div class="col-md-4" ng-repeat="service in card.image_service">
+									<center><img ng-src="{{service}}"/> 
+									<!-- <p class="green"> asjdfaisgd</p> </center>  -->
+								</div> 
+							</div>
+							<!-- <div class="col-md-6">
+							<h4><span class="grey fa fa-clock-o"></span> Timings </h4>		
+							<p></p>
+							</div>
+							<div class="col-md-6">
+							<h4><span class="grey fa fa-inr"></span> Fees Details</h4>
+							<p>lhalhasdalhds</p>							
+							</div> -->
+						</div>
+					</div>
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+					
+						<div class="row   doc_ser">
+							<!-- Specialisation details -->
+							<h4><img ng-src="images/doctorproicons/specialization.png" />  Specialization  </h4>
+						</div>
+						<div class="row  doc_ser">
+							<div class="row" >
+								<div class="col-md-4 grey" >
+									<h5>{{doc_data.0.speciality | uppercase}}	</h5>
+								</div> 
+							</div>
+								
+						</div>
+					</div>
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row   doc_ser">
+							<!-- Education details -->
+							<h4><img ng-src="images/doctorproicons/Education.png" /> Education Details </h4>
+						</div>
+						<div class="row  doc_ser">
+							<div class="row" ng-show="card.education.length">
+								<div class="col-md-4 grey" ng-repeat="edu in card.education">
+									<h5>{{edu}}	</h5>
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row  doc_ser">
+							<!-- Experience details -->
+							<h4><img ng-src="images/doctorproicons/Experience.png" /> Experience </h4>
+						</div>
+						<div class="row  doc_ser">
+							<div class="row" ng-show="card.experience.length">
+								<div class="col-md-4 grey" ng-repeat="experience_details in card.experience">
+									<h5>{{experience_details}}	</h5>
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="row  doc_ser">
+							<!-- Memberships details -->
+							<h4><img ng-src="images/doctorproicons/memberships.png" /> Memberships  </h4>
+						</div>
+						<div class="row doc_ser">
+							<div class="row" ng-show="card.Memberships.length">
+								<div class="col-md-4 grey" ng-repeat="membership_details in card.Memberships">
+									<h5>{{membership_details}}	</h5>
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- Right profile  -->
+				<div class="col-md-4">
+				<!-- <h4 style="text-align:left">Showing <strong>1002</strong> Results found for <strong>Dr. doctor name </strong> </h4><br> -->
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="bookappointment">
+						<center><img class="img-responsive" src="images/bookappointment.png"/></center>
+						</div>
+						<!-- booking form -->
+						<div class="bo1" ng-controller="formValidation">
+						
+							<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+								<!-- NAME -->
+								<div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+									<label>Name *</label>
+									<input type="text" name="name" placeholder="Patient Name" class="form-control" ng-model="user.name" required>
+									<p ng-show="!userForm.name.$invalid " class="help-block">Name is required.</p>
+								</div>
+								
+								<!-- reason -->
+								<div class="form-group" ng-class="{ 'has-error' : userForm.reason.$invalid && !userForm.reason.$pristine }">
+									<label>Appointment Reason *</label>
+									<input type="text" name="reason" placeholder="e.g. symptoms, pain " class="form-control" ng-model="user.reason" required>
+									<p ng-show="!userForm.reason.$invalid " class="help-block">Reason is required for Appointment.</p>
+								</div>
+								
+								
+								<!-- USERNAME -->
+								<!-- <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+									<label>Username</label>
+									<input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8">
+									<p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+									<p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+								</div> -->
+									
+								<!-- EMAIL -->
+								<div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid }">
+									<label>Email *</label>
+									<input type="email" name="email" placeholder="abc@healthserve.in" class="form-control" ng-model="user.email">
+									<p ng-show="userForm.email.$invalid " class="help-block">Enter a valid email.</p>
+								</div>
+								
+								<!-- EMAIL -->
+								<div class="form-group" ng-class="{ 'has-error' : userForm.phone.$invalid }">
+									<label>Mobile Number *</label>
+									<input type="number" name="phone" placeholder="" class="form-control" ng-model="user.phone">
+									<p ng-show="userForm.phone.$invalid " class="help-block">Enter a valid Phone number.</p>
+								</div>
+								
+								
+								<center>
+								<button type="submit" class="btn btn-primary"><span class="fa fa-paper-plane"></span> Book Appointment</button>
+								</center>
+							</form>
+						
+						
+						
+							
+						</div>
+					
+
+					
+					</div>
+				</div>
+	</div>
+</div>

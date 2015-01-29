@@ -1,0 +1,115 @@
+<div class="container" >
+	<div class="row" id="contentHolder" style="margin-top:50px;">
+				<!-- left profile  -->
+				<div class="col-md-8">
+					
+					
+				</div>
+				<!-- Right profile  -->
+				<div class="col-md-4">
+				<!-- <h4 style="text-align:left">Showing <strong>1002</strong> Results found for <strong>Dr. doctor name </strong> </h4><br> -->
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						<div class="bookappointment">
+						<h3 style="text-align:center;">Sign Up</h3>
+						</div>
+						<!-- booking form -->
+						<div class="bo1" ng-controller="formValidation">
+						    <div ng-controller="patient_registration">
+							<form name="form" shake-that submitted="submitted">
+								
+								<div class="form-group" ng-class="{'has-error': form.fname.$invalid && submitted}">
+								  <label for="fname" class="control-label">First Name </label>
+								  <input
+									type="text"
+									class="form-control"
+									id="fname"
+									name="fname"
+									placeholder="Your First Name"
+									ng-model="p_registrationform.fname"
+									ng-model-options="{updateOn: 'blur'}"
+									required>
+								</div>
+								
+								<div class="form-group" ng-class="{'has-error': form.lname.$invalid && submitted}">
+								  <label for="lname" class="control-label">Last Name </label>
+								  <input
+									type="text"
+									class="form-control"
+									id="lname"
+									name="lname"
+									placeholder="Your Last Name"
+									ng-model="p_registrationform.lname"
+									ng-model-options="{updateOn: 'blur'}"
+									required>
+								</div>
+								
+								<div class="form-group" ng-class="{'has-error': form.mobile.$invalid && submitted}">
+								  <label for="mobile" class="control-label">Mobile Number </label>
+								  <input
+									type="number"
+									class="form-control"
+									id="mobile"
+									name="mobile"
+									min="10"
+									placeholder="Mobile Number"
+									ng-model="p_registrationform.mobile"
+									ng-model-options="{updateOn: 'blur'}"
+									required>
+								</div>
+								<div class="form-group" ng-class="{'has-error': form.password1.$invalid && submitted}">
+								  <label for="password1" class="control-label">Password</label>
+								  <input
+									type="password"
+									class="form-control"
+									id="password1"
+									name="password1"
+									placeholder="Password"
+									ng-model="p_registrationform.password1"
+									ng-model-options="{updateOn: 'blur'}"
+									required>
+								</div>
+								<div class="form-group" ng-class="{'has-error': form.password.$invalid && submitted}">
+								  <label for="password" class="control-label">Confirm Password</label>
+								  <input
+									type="password"
+									class="form-control"
+									id="password"
+									name="password"
+									placeholder="Confirm Password"
+									ng-model="p_registrationform.password"
+									ng-model-options="{updateOn: 'blur'}"
+									required>
+								</div>
+								<br>
+								<center><button alt="submit" ng-click="p_registrationform.submitForm()" class="btn btn-primary btn-sm"><span class="fa fa-paper-plane"></span> Sign Up</button></center>
+							</form>
+							</div>
+							<br><br>
+							
+								<h5 style="text-align:center">Already a user?<a href="#/patient" class="green" style="font-weight:900"> Login</a></h5><br>
+							<!-- <hr>
+							
+							<div style="margin:30px;">
+								<a class="btn btn-block btn-social btn-facebook" >
+									<i class="fa fa-facebook"></i> Sign in with Facebook
+								</a>
+								<br>
+								<a class="btn btn-block btn-social btn-twitter">
+									 <i class="fa fa-twitter"></i> Sign in with Twitter
+								</a>
+								<br>
+								<a class="btn btn-block btn-social btn-google-plus" >
+									<i class="fa fa-google-plus"></i> Sign in with Google
+								</a>	
+							</div> -->
+							
+							
+						</div>
+					
+
+					
+					</div>
+				</div>
+	</div>
+</div>

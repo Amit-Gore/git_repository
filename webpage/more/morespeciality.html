@@ -1,0 +1,21 @@
+<div class="container" ng-controller="speciality" >
+	<div class="row" id="contentHolder" style="margin-top:50px;">
+				<!-- left content  -->
+				<div class="col-md-9">
+					<h3><img ng-src = "images/tag-48.png" /> Doctors by Speciality </h3>
+					<div class="col-md-4" ng-repeat="spl in specialitys | orderBy:searchText|mySort">
+						<div style="padding:7px;">
+							<a ng-href="" style="color:#606060; font-size:16px;cursor:pointer;text-decoration:none "  ><img src="images/dash.png"/>&nbsp;&nbsp; {{spl  }}<br></a>
+						</div>
+					</div>
+				</div>
+				<!-- Right blog  -->
+				<div class="col-md-3">
+					
+					<div class="[ panel1 panel1-default ] panel1-google-plus">
+						
+						
+					</div>
+				</div>
+	</div>
+</div>

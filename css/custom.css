@@ -1,0 +1,513 @@
+/* card */
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  
+  box-sizing: border-box;
+  /* border-radius: 2px; */
+  background-clip: padding-box;
+}
+.card1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card11{
+  
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+.panel2-google-plus {
+    width:100%;
+	position: relative;
+    border-radius: 0px;
+    border: 1px solid rgb(67, 185, 123);
+	/* border-radius:3px; */
+    font-family: cicle Semi;
+	box-sizing: border-box;
+	/* border-radius: 2px; */
+	background-clip: padding-box;
+	/* font-family: 'Roboto', vardana; */
+}
+.panel2-google-plus>.h1 {
+    font-size:2em;
+    
+  
+}
+.panel1-google-plus {
+    position: relative;
+    border-radius: 0px;
+     border: 1px solid #E8E8E8; 
+	/* border-radius:10px;  */
+    /* font-family: 'Roboto', vardana; */
+	/* margin-bottom: 3px; */
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 1px 0px 0 rgba(0, 0, 0, 0.12);
+	background-color:#fff;
+}
+.panel1-google-plus > .dropdown {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.panel1-google-plus > .dropdown > span > span {
+    font-size: 16px;   
+}
+.panel1-google-plus > .dropdown > .dropdown-menu {
+    left: initial;
+    right: 0px;
+    border-radius: 2px;
+}
+.panel1-google-plus > .panel1-google-plus-tags {
+    position: absolute;
+    top: 35px;
+    right: -3px;
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul:hover {
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);   
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);   
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul > li {
+    display: block;
+    right: 0px;
+    width: 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    font-size: 12px;
+    overflow: hidden;
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul > li::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+	border-right: 3px solid rgb(67, 185, 123);
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul:hover > li,
+.panel1-google-plus > .panel1-google-plus-tags > ul > li:first-child {
+    padding: 5px 15px 5px 10px;
+    width: auto;
+    cursor: pointer;
+    margin-left: auto;
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul:hover > li {
+    background-color: rgb(255, 255, 255);   
+}
+.panel1-google-plus > .panel1-google-plus-tags > ul > li:hover {
+    background-color: rgb(67, 185, 123);
+    color: rgb(87, 89, 91);
+}
+.panel1-google-plus > .panel1-heading,
+.panel1-google-plus > .panel1-footer {
+    background-color: rgb(255, 255, 255);
+    border-width: 0px; 
+}
+.panel1-google-plus > .panel1-heading {
+    margin-top: 14px;    
+    padding-bottom: 0px; 
+}
+.panel1-google-plus > .panel1-heading > img { 
+    margin-right: 15px;
+	margin-left: 15px;
+}
+.panel1-google-plus > .panel1-heading > h3 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.panel1-google-plus > .panel1-heading > h5 {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+.panel1-google-plus > .panel1-body {
+    padding-top: 30px;
+    font-size: 13px;
+}
+.panel1-google-plus > .panel1-body > .panel1-google-plus-image {
+    display: block;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(217, 217, 217);
+}
+.panel1-google-plus > .panel1-body > .panel1-google-plus-image > img {
+    max-width: 100%;
+}
+
+.panel1-google-plus > .panel1-footer {
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 54px;
+	padding:10px;border-radius: 10px;
+}
+.panel1-google-plus > .panel1-footer > .btn {
+    float: left;
+    margin-right: 8px;
+}
+.panel1-google-plus > .panel1-footer > .input-placeholder {
+    display: block;
+     /* margin-left: 158px;  */
+    color: rgb(64, 64, 65);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 6px 7px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+	/* Width:30%; */
+	text-align:center;
+}
+.panel1-google-plus.panel1-google-plus-show-comment > .panel1-footer > .input-placeholder {
+    display: none;   
+}
+.panel1-google-plus > .panel1-google-plus-comment {
+    display: none;
+    padding: 10px 10px 10px;
+    border-top: 1px solid rgb(229, 229, 229);
+    background-color: 	#E6EBE6;
+}
+.panel1-google-plus.panel1-google-plus-show-comment > .panel1-google-plus-comment {
+    display: block;
+	/* border-radius: 10px; */
+}
+/*.panel1-google-plus > .panel1-google-plus-comment > img {
+    float: left;   
+}*/
+.panel1-google-plus > .panel1-google-plus-comment > .panel1-google-plus-textarea {
+    float: right;
+    width: calc(100% - 56px);
+}
+.panel1-google-plus > .panel1-google-plus-comment > .panel1-google-plus-textarea > textarea {
+    display: block;
+    /*margin-left: 60px;
+    width: calc(100% - 56px);*/
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    resize: vertical;
+}
+.panel1-google-plus > .panel1-google-plus-comment > .panel1-google-plus-textarea > .btn {
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .panel1-google-plus > .panel1-google-plus-comment > .panel1-google-plus-textarea > .btn {
+        width: 988;
+    }    
+}
+
+
+.panel1-google-plus .btn {
+    border-radius: 3px;   
+}
+.panel1-google-plus .btn-default {
+    /* border: 1px solid rgb(217, 217, 217); */
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+.panel1-google-plus .btn-default:hover, 
+.panel1-google-plus .btn-default:focus, 
+.panel1-google-plus .btn-default:active {
+    background-color: rgb(255, 255, 255);
+    /* border-color: rgb(0, 0, 0);     */
+}
+
+
+
+/* map */
+
+.map-canvas {
+        width: 100%;
+        height: 607px;   /* 208px for 1 search result */
+		background-color: #CCC;
+      }
+
+
+
+#map {
+    height:420px;
+    width:100%;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+
+
+
+
+.heading_filter
+{
+
+/* height:30px; */
+background-color:#43b98f ;
+padding:10px; 
+cursor:default;
+margin-bottom:10px;
+box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* confirmation page */
+
+
+.green
+{
+color:#43b98f;
+
+}	
+
+.grey
+{
+color:#2f3030;
+
+}
+
+.pro-info
+{
+margin-top:10px;
+}
+
+.doc_ser
+{
+margin: 5px;
+padding: 5px;
+
+}
+
+.doc_ser h4
+{
+font-size:17px;
+color:#696b6b;
+font-weight:900;
+}
+
+.doc_ser p
+{
+font-size:14px;
+color: #121212;
+}
+
+.pro-deg {
+color: #505050;
+font-weight: 600;
+}
+
+.bookappointment
+{
+margin: 10px;
+
+
+}
+.bookappointment h3
+{
+color: rgb(67,185,123);
+font-weight: 600;
+}
+
+.bo1{
+margin-top: 20px;
+margin: 20px;
+}
+
+/* login form */
+
+@keyframes shake {
+  0% {transform: translateX(0);}
+  12.5% {transform: translateX(-6px) rotateY(-5deg)}
+  37.5% {transform: translateX(5px) rotateY(4deg)}
+  62.5% {transform: translateX(-3px) rotateY(-2deg)}
+  87.5% {transform: translateX(2px) rotateY(1deg)}
+  100% {transform: translateX(0)}
+}
+
+.shake {
+  animation: shake 400ms ease-in-out;
+}
+
+/* buttons */
+
+/* Facebook */
+.fb-icon-bg {
+	background: #354f88;
+	height: 37px;
+	margin: 0 0 -37px 0;
+	width: 41px; 
+}
+
+.fb-icon-bg:after {
+  content: url(https://dl.dropboxusercontent.com/u/54149043/CssDeck/fb-icon.png);
+  display: block;
+  padding: 9px 10px 5px 15px;
+}
+
+.fb-bg {
+	background: #3b5998;
+	display: block;
+	height: 37px;
+	margin: 0 0 30px 41px;
+	width: 166px; 
+}
+
+.fb-bg:after {
+	color: #fff;
+	content: "sign in with facebook";
+	font-family: 'Oswald', sans-serif;
+	height: 37px;
+	left: 8%;
+	position: relative;
+	text-transform: uppercase;
+	top: 22%;
+	width: 41px; 
+}
+
+.fb-bg:hover{
+  cursor: pointer;
+}
+
+.fb-bg:active{
+  background: #354f88;
+}
+
+/* Twitter */
+.twi-icon-bg:after {
+  content: url(https://dl.dropboxusercontent.com/u/54149043/CssDeck/twi-icon.png);
+  display: block;
+  padding: 11px 10px 6px 11px;
+}
+
+.twi-icon-bg {
+	background: #40a2d1;
+	height: 37px;
+	margin: 0 0 -37px 0;
+	width: 41px; 
+}
+
+.twi-bg {
+	background: #45b0e3;
+	height: 37px;
+	margin: 0 0 30px 41px;
+	width: 166px; 
+}
+ 
+.twi-bg:after {
+	color: #fff;
+	content: "sign in with twitter";
+	font-family: 'Oswald', sans-serif;
+	height: 37px;
+  left: 11%;
+	position: relative;
+  text-transform: uppercase;
+	top: 22%;
+  width: 41px; 
+}
+
+.twi-bg:hover {
+  cursor: pointer;
+}
+
+.twi-bg:active {
+  background: #40a2d1;
+}
+
+/* Google+ */
+.g-icon-bg:after {
+  content: url(https://dl.dropboxusercontent.com/u/54149043/CssDeck/g-icon.png);
+  display: block;
+  padding: 11px 10px 6px 13px;
+}
+
+.g-icon-bg {
+	background: #ce3e26;
+	height: 37px;
+	margin: 0 0 -37px 0;
+	width: 41px; 
+}
+ 
+.g-bg {
+	background: #de4c34;
+	height: 37px;
+	margin-left: 41px;
+	width: 166px; 
+}
+ 
+.g-bg:after {
+	color: #fff;
+	content: "sign in with google+";
+	font-family: 'Oswald', sans-serif;
+	height: 37px;
+	left: 10%;
+	position: relative;
+	text-transform: uppercase;
+	top: 22%;
+	width: 41px; 
+}
+
+.g-bg:hover {
+  cursor: pointer;
+}
+
+.g-bg:active {
+  background: #ce3e26;
+}
+
+
+
+
+
+.table-container {
+    width:100%;
+    /* Total width of visible columns + border widths */
+    height:100%;
+    
+    overflow:hidden;
+	/* outline: 1px solid #45b97c; */
+}
+.sliding-window {
+    width:100%;
+    /* Total width of all columns in sliding-window + border widths */
+    height:auto;
+    overflow:hidden;
+}
+.sliding-window div {
+   
+   width: 609px;
+   height: AUTO;
+   
+   outline: 1px solid #45b97c;
+}
+
+
+
+
+
+/* custom css for available slots  */
+.available
+{
+font-weight:600;
+}
+.not_available
+{
+color:#B8B8B8;
+text-decoration: line-through;
+cursor:default;
+}
+
+a.not_available:hover
+{
+color:#B8B8B8;
+text-decoration: line-through;
+cursor:default;
+}
+

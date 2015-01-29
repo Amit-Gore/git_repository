@@ -1,0 +1,284 @@
+[  
+   {  
+      "img":"images/doctor4.png",
+      "name":"Sujit Jagtap",
+      "degree":"bds",
+      "about":"Dr. Sujit Jagtap is a Pediatrician in Pune.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Aundh",
+         "Kothrud"
+      ],
+      "quickbook":true,
+      "fees":687,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png",
+         "images/pathology_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/banner1.jpg",
+      "name":"Omkar Padwalkar ",
+      "degree":"Md",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospitalname",
+      "locations":[  
+         "KP"
+      ],
+      "quickbook":false,
+      "fees":400
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Atul Hirve",
+      "degree":"MBBS",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Bavdhan"
+      ],
+      "quickbook":true,
+      "fees":300,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   
+   {  
+      "img":"images/banner1.jpg",
+      "name":"Omkar Padwalkar ",
+      "degree":"Md",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospitalname",
+      "locations":[  
+         "KP"
+      ],
+      "quickbook":false,
+      "fees":400
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Atul Hirve",
+      "degree":"MBBS",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Bavdhan"
+      ],
+      "quickbook":true,
+      "fees":300,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Amit Kale",
+      "degree":"bds",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Aundh",
+         "Kothrud"
+      ],
+      "quickbook":true,
+      "fees":687,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png",
+         "images/pathology_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/banner1.jpg",
+      "name":"Omkar Padwalkar ",
+      "degree":"Md",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospitalname",
+      "locations":[  
+         "KP"
+      ],
+      "quickbook":false,
+      "fees":400
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Atul Hirve",
+      "degree":"MBBS",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Bavdhan"
+      ],
+      "quickbook":true,
+      "fees":300,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Amit Kale",
+      "degree":"bds",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Aundh",
+         "Kothrud"
+      ],
+      "quickbook":true,
+      "fees":687,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png",
+         "images/pathology_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/banner1.jpg",
+      "name":"Omkar Padwalkar ",
+      "degree":"Md",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospitalname",
+      "locations":[  
+         "KP"
+      ],
+      "quickbook":false,
+      "fees":400
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Atul Hirve",
+      "degree":"MBBS",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Bavdhan"
+      ],
+      "quickbook":true,
+      "fees":300,
+      "image_service":[  
+         "images/imagin_icon.png",
+         "images/medical_icon.png"
+      ]
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   },
+   {  
+      "img":"images/doctor4.png",
+      "name":"Saurabh Shete",
+      "degree":"hr",
+      "about":"Dr.Robert McIntosh is a Pediatrician in Khas, Ahmedabad.",
+      "hospital":"hospital name",
+      "locations":[  
+         "Chandani Chawk"
+      ],
+      "quickbook":false,
+      "fees":150
+
+   }
+]

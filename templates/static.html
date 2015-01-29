@@ -1,0 +1,24 @@
+<div class="footer static row" ng-controller="staticpages" >
+	<div class="col-md-12" style="padding:40px;" >
+		<div class="col-md-4" style="padding:20px;" ng-repeat="sp in static_page">
+			<h3><img ng-src = "{{sp.images}}" /> {{sp.titles}}</h3>
+			<div style="padding:20px;">
+			
+				<a ng-href="" style="color:#606060;text-decoration:none;cursor:pointer " ng-repeat="location in sp.detail | orderBy:searchText|mySort"" ><img src="images/bu.png"/> {{location }} <br></a>
+				&nbsp;&nbsp;&nbsp;<a ng-href="#/{{sp.more}}" style="color:#606060; font-weight:600;text-decoration:none;cursor:pointer "  ><b>  more ...  </b><br></a>
+		
+			</div>
+		</div>
+		
+		<!-- <div class="col-md-4" style="padding:10px;">
+			<h3><img src = "images/tag-48.png" /> Speciality</h3>
+		
+		</div>
+		
+		<div class="col-md-4" style="padding:10px;">
+			<h3><img src = "images/hospital-48.png" /> Clinic</h3>
+		
+		</div> -->
+	</div>
+	
+</div>
